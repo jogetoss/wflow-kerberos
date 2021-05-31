@@ -1,0 +1,61 @@
+[
+    {
+        title : 'Kerberos Settings',
+        properties : [
+            {
+                name : 'ssoUrl',
+                label : 'SSO URL',
+                type : 'label',
+                value : '%s',
+            },{
+                name : 'servicePrincipal',
+                label : 'Service Principal',
+                type : 'textfield',
+                description : 'e.g. HTTP/DOMAIN.NAME',
+                value : '',
+                required : 'true'
+            },{
+                name : 'keytabPath',
+                label : 'Path to KeyTab File',
+                type : 'textfield',
+                value : '',
+                required : 'true'
+            },{
+                name : 'debug',
+                label : 'Debug Enabled',
+                type : 'checkbox',
+                options : [{
+                    value : 'true',
+                    label : ''
+                }]
+            },{
+                name : 'usernameRewrite',
+                label : 'Username Rewrite Rules',
+                type : 'grid',
+                columns : [{
+                    key : 'regex',
+                    label : 'Regex Pattern',
+                    required : 'True'
+                },
+                {
+                    key : 'replacement',
+                    label : 'Replacement',
+                    required : 'True'
+                }]
+            }
+        ]
+    },
+    %s,
+    {
+        title : '@@app.edm.label.addonDirectorManager@@',
+        properties : [
+            {
+                name : 'dm1',
+                label : '@@app.edm.label.addon@@',
+                type : 'elementselect',
+                options_ajax : '[CONTEXT_PATH]/web/json/plugin/org.joget.plugin.directory.SecureDirectoryManager/service',
+                url : '[CONTEXT_PATH]/web/property/json[APP_PATH]/getPropertyOptions'
+            }%s
+        ]
+    }
+]

@@ -1,6 +1,8 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+Kerberos is a network authentication protocol designed by the Massachusetts Institute of Technology (MIT) for single sign-on (SSO) in client-server environments. The Kerberos Directory Manager plugin extends the Security Enhanced Directory Manager to allow users to single sign-on (SSO) to [Joget](https://www.joget.org) using Kerberos authentication.
+
+Example configuration is available at [Joget SSO to Active Directory with Kerberos](https://dev.joget.org/community/display/DX7/Joget+SSO+to+Active+Directory+with+Kerberos).
 
 # Getting Help
 
