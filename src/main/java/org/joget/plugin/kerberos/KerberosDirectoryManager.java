@@ -52,7 +52,7 @@ public class KerberosDirectoryManager extends SecureDirectoryManager {
 
     @Override
     public String getVersion() {
-        return "6.0.2";
+        return "6.0.3";
     }
 
     @Override
